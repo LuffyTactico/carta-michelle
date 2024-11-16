@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Michelle</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: #ffebf0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff66a1;
+        }
+        button {
+            background-color: #ffd1dc;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff99b8;
+        }
+        #modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+        #modal img {
+            width: 25%; /* Imagen al 50% del ancho del modal */
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        #modal h2 {
+            color: #ff66a1;
+        }
+        #modal p {
+            margin: 10px 0;
+        }
+        .close {
+            background-color: #ff99b8;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡TE AMO Michelle! 🎉</h1>
+    <button onclick="openModal()">Toque aquí</button>
+
+    <div id="modal">
+        <!-- Imagen con tamaño reducido -->
+        <img src="https://i.imgur.com/itTZF2p.jpeg" alt="Nuestra foto juntos">
+        
+        <!-- Mensaje -->
+        <h2>Feliz 7 Meses, Michelle ❤️</h2>
+        <p>
+            Te amo demasiado estos 7 meses han sido los mejores a tu lado  el mjr dia que tuve fue cuando te conoci, cada detalle que me das siempre me pones demasiado feliz cada carta cada cosa que me dices siempre alegra mis dias eres una persona maravillosa eres sufiente, bonita, detallista, con un humor todo rancio que me enamora q esta igual q el mio XD siempre me la paso demasiado bien a tu lado y espero que asi sea siempre espero durar contigo toda la vida contigo por que te amo! ❤️❤️❤️
+        </p>
+        
+        <!-- Widget de Spotify -->
+        <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/6jgkEbmQ2F2onEqsEhiliL?utm_source=generator" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+        </iframe>
+        
+        <!-- Botón para cerrar -->
+        <button class="close" onclick="closeModal()">Cerrar</button>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
